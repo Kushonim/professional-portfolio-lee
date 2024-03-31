@@ -1,0 +1,149 @@
+:root {
+    /* adwda*/
+}
+
+body {
+    font-family: barlow;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F2F3;
+}
+
+header {
+    display:flex;
+    background-color: #2C3531;
+    height: 90px;
+}
+
+h1 {
+    font-size: 1.7em;
+    text-wrap: nowrap;
+    border: solid #116466;
+    background-color: #116466;
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10%;
+    color: #F4F2F3;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: px;
+}
+
+h2 {
+    color: black;
+    font-size: 1.7em;
+}
+
+header > nav {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+}
+
+a:link {
+    color: #F4F2F3;
+}
+
+a:visited {
+    color: #F4F2F3;
+}
+
+a:hover {
+    color: #FFCB9A;
+}
+
+
+#aboutMe {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#contactMe {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.sectionText {
+    margin-left: 25px;
+    width: 220px;
+    border-left: 5px solid black;
+    border-width: 2px;
+    height: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+#profilePicture {
+    position: absolute;
+    left: 500px;
+    bottom: 270px;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+    #profilePicture {
+        position: absolute;
+        left: 400px;
+        bottom: 300px;
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+    .sectionText {
+        margin-left: 45px;
+        width: 220px;
+        border-left: 5px solid black;
+        border-width: 2px;
+        height: 200px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    #profilePicture {
+        position: absolute;
+        left: 460px;
+        bottom: 300px;
+    }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+    .sectionText {
+        margin-left: 225px;
+        width: 220px;
+        border-left: 5px solid black;
+        border-width: 2px;
+        height: 200px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    #profilePicture {
+        position: absolute;
+        left: 660px;
+        bottom: 300px;
+    }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+    .sectionText {
+        margin-left: 225px;
+        width: 220px;
+        border-left: 5px solid black;
+        border-width: 2px;
+        height: 200px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+    #profilePicture {
+        position: absolute;
+        left: 860px;
+        bottom: 300px;
+    }
+}
