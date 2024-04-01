@@ -1,4 +1,4 @@
-/* */
+/* Retrieved custom barlow font and initialized the body. */
 body {
     font-family: barlow;
     margin: 0;
@@ -6,14 +6,14 @@ body {
     background-color: #F4F2F3;
 }
 
-/* */
+/* Initializes the header to have desired color and features. */
 header {
     display:flex;
     background-color: #2C3531;
     height: 90px;
 }
 
-/* */
+/* Creates my name at the top left of the webpage and designs a section for it. */
 h1 {
     font-size: 1.7em;
     text-wrap: nowrap;
@@ -26,13 +26,13 @@ h1 {
     color: #F4F2F3;
 }
 
-/* */
+/* Simple ruleset to create the content containing sections. */
 h2 {
     color: black;
     font-size: 1.7em;
 }
 
-/* */
+/* Creates interactive href links that take you to the desired section of the page. */
 header > nav {
     display: flex;
     justify-content: flex-end;
@@ -41,34 +41,34 @@ header > nav {
     width: 75%;
 }
 
-/* */
+/* Establishes default color of links. */
 a:link {
     color: #F4F2F3;
 }
 
-/* */
+/* Establishes color of visited links. */
 a:visited {
     color: #F4F2F3;
 }
 
-/* */
+/* Establishes color of links when hovered by user. */
 a:hover {
     color: #FFCB9A;
 }
 
-/* */
+/* Backend help to fix design flaw for about me section. */
 #aboutMe {
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
-/* */
+/* Backend help to fix design flaw for contact me section. */
 #contactMe {
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
-/* */
+/* Creates and styles the text that holds the content of the webpage. */
 .sectionText {
     margin-left: 25px;
     width: 220px;
@@ -80,7 +80,7 @@ a:hover {
     font-size: .9em;
 }
 
-/* */
+/* Styles the list in the contact me section. */
 #contactMe > ul {
     height: 190px;
     list-style: none;
@@ -98,6 +98,7 @@ a:hover {
     }
 }
 
+/* Initializes the parent box to set up the project boxes. */
 .box {
     display: flex;
     justify-content: space-around;
@@ -106,6 +107,7 @@ a:hover {
     margin-top: 20px;
 }
 
+/* Applies the style to the main first project to be bigger than the others. */
 #firstApplication {
     background-color: #D1E8E2;
     background-image: url(../assets/images/payroll.png);
@@ -119,6 +121,7 @@ a:hover {
     margin-left: 200px;
 }
 
+/* Style the text for the inside of the first project. */
 #firstApplication > p {
     color: #FFCB9A;
     margin-top: 200px;
@@ -128,6 +131,7 @@ a:hover {
     height: 40px;
 }
 
+/* Applies the style to the other projects. */
 .otherApplications {
     border: solid #116466;
     border-width: 2.5px;
@@ -138,6 +142,7 @@ a:hover {
 
 }
 
+/* Styles the text for the inside of the other projects. */
 .otherApplications > p {
     text-wrap: nowrap;
     color: #FFCB9A;
@@ -146,18 +151,21 @@ a:hover {
     width: 160px;
     height: 25px;
 }
-/* */
+
+/* Creates and positions my profile picture. */
 #profilePicture {
     position: absolute;
     left: 500px;
     bottom: 270px;
 }
 
+/* Upon hovering the first project, it will highlight the interactive element. */
 #firstApplication:hover {
     opacity: .5;
     cursor: pointer;
 }
 
+/* Upon hovering the other projects, it will highlight their interactive element. */
 .otherApplications:hover {
     opacity: .5;
     cursor: pointer;
@@ -176,6 +184,15 @@ a:hover {
     #profilePicture {
         left: 400px;
         bottom: 300px;
+    }
+
+    #firstApplication {
+        margin-left: 65px;
+    }
+
+    .otherApplications {
+        width: 150px;
+        margin-left: 0px;
     }
 }
 
@@ -199,6 +216,15 @@ a:hover {
         left: 460px;
         bottom: 290px;
         height: 200px;
+    }
+
+    #firstApplication {
+        margin-left: 80px;
+    }
+
+    .otherApplications {
+        width: 180px;
+        margin-left: 0px;
     }
 }
 
@@ -227,6 +253,15 @@ a:hover {
         left: 660px;
         bottom: 235px;
         height: 250px;
+    }
+
+    #firstApplication {
+        margin-left: 115px;
+    }
+
+    .otherApplications {
+        width: 240px;
+        margin-left: 0px;
     }
 }
 
@@ -260,5 +295,14 @@ a:hover {
 
     #contactMe > ul {
         height: 240px;
+    }
+
+    #firstApplication {
+        margin-left: 150px;
+    }
+
+    .otherApplications {
+        width: 300px;
+        margin-left: 0px;
     }
 }
