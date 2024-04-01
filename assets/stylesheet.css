@@ -1,7 +1,4 @@
-:root {
-    /* adwda*/
-}
-
+/* */
 body {
     font-family: barlow;
     margin: 0;
@@ -9,12 +6,14 @@ body {
     background-color: #F4F2F3;
 }
 
+/* */
 header {
     display:flex;
     background-color: #2C3531;
     height: 90px;
 }
 
+/* */
 h1 {
     font-size: 1.7em;
     text-wrap: nowrap;
@@ -25,15 +24,15 @@ h1 {
     margin-bottom: 10px;
     padding-left: 10%;
     color: #F4F2F3;
-    -webkit-text-stroke: black;
-    -webkit-text-stroke-width: px;
 }
 
+/* */
 h2 {
     color: black;
     font-size: 1.7em;
 }
 
+/* */
 header > nav {
     display: flex;
     justify-content: flex-end;
@@ -42,29 +41,34 @@ header > nav {
     width: 75%;
 }
 
+/* */
 a:link {
     color: #F4F2F3;
 }
 
+/* */
 a:visited {
     color: #F4F2F3;
 }
 
+/* */
 a:hover {
     color: #FFCB9A;
 }
 
-
+/* */
 #aboutMe {
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
+/* */
 #contactMe {
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
+/* */
 .sectionText {
     margin-left: 25px;
     width: 220px;
@@ -73,19 +77,103 @@ a:hover {
     height: 200px;
     padding-left: 20px;
     padding-top: 20px;
+    font-size: .9em;
+}
+
+/* */
+#contactMe > ul {
+    height: 190px;
+    list-style: none;
+
+    a:link {
+        color: black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: #FFCB9A;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#firstApplication {
+    background-color: #D1E8E2;
+    background-image: url(../assets/images/payroll.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid #116466;
+    border-width: 5px;
+    height: 250px;
+    width: 75%;
+    margin-left: 200px;
+}
+
+#firstApplication > p {
+    color: #FFCB9A;
+    margin-top: 200px;
+    text-wrap: nowrap;
+    background-color: #116466;
+    width: 190px;
+    height: 40px;
+}
+
+.otherApplications {
+    border: solid #116466;
+    border-width: 2.5px;
+    margin-left: 120px;
+    width: 300px;
+    height: 100px;
+    background-color: #D1E8E2;
 
 }
 
+.otherApplications > p {
+    text-wrap: nowrap;
+    color: #FFCB9A;
+    margin-top: 70px;
+    background-color: #116466;
+    width: 160px;
+    height: 25px;
+}
+/* */
 #profilePicture {
     position: absolute;
     left: 500px;
     bottom: 270px;
 }
 
+#firstApplication:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.otherApplications:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
 /* Small devices such as large phones (640px and up) */
 @media only screen and (min-width: 40em) {
+    header > nav {
+        font-size: 20px;
+    }
+
+    .sectionText {
+        margin-left: 50px;
+    }
+
     #profilePicture {
-        position: absolute;
         left: 400px;
         bottom: 300px;
     }
@@ -93,57 +181,84 @@ a:hover {
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 48em) {
-    .sectionText {
-        margin-left: 45px;
-        width: 220px;
-        border-left: 5px solid black;
-        border-width: 2px;
-        height: 200px;
-        padding-left: 20px;
+    header > nav {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
         padding-top: 20px;
     }
 
+    .sectionText {
+        margin-left: 65px;
+        font-size: 15px;
+    }
+
     #profilePicture {
-        position: absolute;
         left: 460px;
-        bottom: 300px;
+        bottom: 290px;
+        height: 200px;
     }
 }
 
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (min-width: 64em) {
+    header > nav {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-top: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
     .sectionText {
         margin-left: 225px;
-        width: 220px;
-        border-left: 5px solid black;
-        border-width: 2px;
-        height: 200px;
-        padding-left: 20px;
-        padding-top: 20px;
+        font-size: 17px;
+        height: 250px;
     }
 
     #profilePicture {
-        position: absolute;
         left: 660px;
-        bottom: 300px;
+        bottom: 235px;
+        height: 250px;
     }
 }
 
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 80em) {
+    header > nav {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 38px;
+        padding-top: 5px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
     .sectionText {
         margin-left: 225px;
-        width: 220px;
-        border-left: 5px solid black;
-        border-width: 2px;
-        height: 200px;
-        padding-left: 20px;
-        padding-top: 20px;
+        font-size: 22px;
+        height: 310px;
+        width: 290px;
     }
-    
+
     #profilePicture {
-        position: absolute;
-        left: 860px;
-        bottom: 300px;
+        left: 840px;
+        bottom: 320px;
+        height: 300px;
+    }
+
+    #contactMe > ul {
+        height: 240px;
     }
 }
