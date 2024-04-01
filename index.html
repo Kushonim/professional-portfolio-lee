@@ -8,6 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Austin Lee's Portfolio</title>
+    <script>
+        function payrollPage() {
+            location = "https://kushonim.github.io/employee-payroll-tracker/";
+        }
+
+        function horiseonPage() {
+            location = "https://kushonim.github.io/horiseon-accesibility-revamp/";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -23,7 +32,7 @@
             <h2>
                 About Me
             </h2>
-            <p style="font-size: .9em;" class="sectionText">
+            <p class="sectionText">
                 Hello! My name is Austin Lee and I am currently a student at 
                 the University of Minnesota Twin Cities. I love to work on personal
                 projects and reverse engineering how games could be coded or
@@ -32,19 +41,48 @@
                 <img src="../professional-portfolio-lee/assets/images/portpfp.png" id="profilePicture">
             </p>
         </div>
-        <div id="contactMe" style="font-size: .9em;" class="sectionText">
+        <br>
+        <div id="contactMe">
             <h2>
                 Contact Me
             </h2>
+            <ul class="sectionText">
+                <li>Cell: <br><a href="tel:6127150509">612-715-0509</a></li>
+                <br>
+                <li>Email: <br><a href="mailto:austindlee30@gmail.com">austindlee30@gmail.com</a></li>
+                <br>
+                <li>GitHub: <br><a href="https://github.com/Kushonim">@Kushonim</a></li>
+            </ul>
         </div>
     </section>
+    <br>
     <figure>
-        <div id="myWork" style="font-size: .9em;" class="sectionText">
+        <div id="myWork">
             <h2>
-                Work
+                Projects
             </h2>
+            <br>
+            <div id="firstApplication" onclick="payrollPage()">
+                <p>Employee Payroll Tracker</p>
+            </div>
+            <article class="box">
+                <div class="otherApplications" style="background-image: url(../professional-portfolio-lee/assets/images/accessibility.png); background-position:center; background-size: cover; background-repeat: no-repeat;" onclick="horiseonPage()">
+                    <p>Accesibility Revamp</p>
+                </div>
+                <div class="otherApplications">
+                    <p>Coming Soon!</p>
+                </div>
+            </article>
+            <article class="box">
+                <div class="otherApplications">
+                    <p>Coming Soon!</p>
+                </div>
+                <div class="otherApplications">
+                    <p>Coming Soon!</p>
+                </div>
+            </article>           
+            </div>
         </div>
     </figure>
-    
 </body>
 </html>
